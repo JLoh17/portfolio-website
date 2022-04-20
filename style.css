@@ -86,8 +86,10 @@ div.hero-description {
 
 /* === PORTFOLIO === */
 .coding-portfolio {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
@@ -95,9 +97,15 @@ div.hero-description {
   flex-direction: column;
   border: 1px solid #74928d;
   border-radius: 0.5rem;
-  margin: 1rem 1.5rem 1.5rem 1.5rem;
+  margin: 1.2rem 1.5rem 1.5rem 1.5rem;
   box-shadow: 5px 5px 10px 1px #444d5e;
   background-color: rgb(235, 238, 246);
+  transition: transform 1s;
+  transition-timing-function: linear;
+}
+
+.card:hover {
+  transform: translateY(-2rem);
 }
 
 .card img {
@@ -111,8 +119,6 @@ div.hero-description {
   flex-direction: column;
   height: 100%;
   padding: 1rem;
-  /* gap: 1rem; */
-  /* background: lightpink; */
 }
 
 .card-body h3 {
