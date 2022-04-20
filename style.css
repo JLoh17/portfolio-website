@@ -102,11 +102,6 @@ div.hero-description {
   /* background-color: #7bafb3; */
 }
 
-.container-padding {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-}
-
 .container-skills {
   margin: 0rem 20% 0rem 20%;
 }
@@ -224,6 +219,11 @@ footer {
 /* === UTILITY CLASSES === */
 .container {
   margin: 0rem 3rem 0rem 3rem;
+}
+
+.container-padding {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .center {
