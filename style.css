@@ -15,6 +15,10 @@ body {
   align-items: center;
 }
 
+h2 {
+  font-size: 2.6rem;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -72,7 +76,8 @@ h1 {
 }
 
 .hero-description > p > span {
-  color: #f46f3e;
+  /* color: #f46f3e; */
+  color: #69d4db;
   font-weight: bold;
 }
 
@@ -84,6 +89,7 @@ div.hero-description {
   width: 40rem;
   background-size: cover;
   border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px 1px #25272b;
 }
 
 /* === SKILLS === */
@@ -91,18 +97,34 @@ div.hero-description {
   /* background-color: #466365; */
   /* color: #f7e6de; */
   color: #2f4f4f;
+
   background-color: #c6d2d0;
+  /* background-color: #7bafb3; */
 }
 
-.title-padding {
+.container-padding {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
+}
+
+.container-skills {
+  margin: 0rem 20% 0rem 20%;
+}
+
+.skills-title {
+  padding-bottom: 2rem;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  gap: 1rem;
+}
+
+.skills-grid img {
+  width: 5rem;
+  height: 5rem;
 }
 
 /* === PORTFOLIO === */
@@ -122,7 +144,7 @@ div.hero-description {
   box-shadow: 5px 5px 10px 1px #444d5e;
   color: #2f4f4f;
   background-color: #ebeef6;
-  transition: transform 0.7s;
+  transition: transform 0.4s;
   transition-timing-function: linear;
 }
 
