@@ -15,10 +15,6 @@ body {
   align-items: center;
 }
 
-h2 {
-  font-size: 2.6rem;
-}
-
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -30,7 +26,7 @@ h2 {
 .logo {
   height: 4rem;
   width: 4rem;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem;
 }
 
 nav > div > a:last-child {
@@ -41,7 +37,7 @@ nav > a:link,
 nav > a:active,
 nav > div > a:link,
 nav > div > a:active {
-  padding: 0px 1rem;
+  padding: 0px 0.9rem;
   text-decoration: none;
   color: #2f4f4f;
 }
@@ -59,36 +55,39 @@ nav > div > a:visited {
 /* === HERO === */
 
 .hero-container {
+  margin: 0rem 5rem;
+}
+
+.hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-items: center;
   background-size: cover;
+  gap: 1rem;
 }
 
 h1 {
   font-size: 3.2rem;
   font-weight: 900;
+  line-height: normal;
 }
 
 .hero-description {
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .hero-description > p > span {
-  color: #69d4db;
+  /* color: #19030f; */
+  color: #efbd19;
   font-weight: bold;
 }
 
-div.hero-description {
-  margin-right: 3rem;
-}
-
 .hero-description > img {
-  width: 40rem;
+  width: 100%;
   background-size: cover;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 10px 1px #25272b;
+  /* margin: 1rem; */
 }
 
 /* === SKILLS === */
@@ -115,7 +114,7 @@ div.hero-description {
 
 /* === PORTFOLIO === */
 .coding-portfolio {
-  max-width: 90%;
+  max-width: 60rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
@@ -149,7 +148,6 @@ div a:active {
   background-size: contain;
   width: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
-  border-bottom: 1px solid #2f4f4f;
 }
 
 .card-body {
@@ -215,6 +213,10 @@ footer {
   color: white;
 }
 
+.footer-container {
+  margin: 0rem 5rem;
+}
+
 .footer-grid {
   display: flex;
   height: 5rem;
@@ -247,14 +249,152 @@ footer {
 }
 
 .container {
-  margin: 0rem 3rem 0rem 3rem;
+  margin: 0rem 5rem;
 }
 
 .container-padding {
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 .center {
   text-align: center;
+}
+
+h2 {
+  font-size: 2.6rem;
+  line-height: normal;
+}
+
+/* === Media Query === */
+/* Large >= 992px
+Medium >= 768px
+Small >= 576px
+X-small < 576px */
+
+@media all and (max-width: 992px) {
+  /* body {
+    color: green;
+  }
+
+  .separate-section {
+    background-color: green;
+  } */
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-description > img {
+    /* height: 100%;
+    width: 0; */
+    /* margin: 1rem; */
+  }
+
+  .coding-portfolio {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: auto;
+  }
+
+  .music-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 3rem;
+  }
+
+  .footer-container {
+    margin: 0rem 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /* body {
+    color: blue;
+  }
+
+  .separate-section {
+    background-color: blue;
+  } */
+
+  nav > a:link,
+  nav > a:active,
+  nav > div > a:link,
+  nav > div > a:active {
+    padding: 0px 0.3rem;
+  }
+
+  .hero-container {
+    margin: 0rem 2rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    margin: 0rem 1rem 1rem 0rem;
+  }
+
+  .coding-portfolio {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .music-grid {
+    grid-template-columns: 1fr;
+    padding: 0.9rem;
+  }
+
+  .footer-container {
+    margin: 0rem 2rem;
+  }
+
+  .connect:link,
+  .connect:active {
+    padding: 0.8rem;
+  }
+
+  .container {
+    margin: 0rem 8rem;
+  }
+}
+
+@media all and (max-width: 576px) {
+  /* body {
+    color: red;
+  }
+
+  .separate-section {
+    background-color: red;
+  } */
+
+  .hero-container {
+    margin: 0rem 1rem;
+  }
+
+  /* nav > a:link,
+  nav > a:active, */
+  nav > div > a:link,
+  nav > div > a:active {
+    visibility: hidden;
+  }
+
+  .footer-container {
+    margin: 0rem 1rem;
+    text-align: center;
+  }
+
+  .footer-grid {
+    display: inline;
+  }
+
+  .connect:link,
+  .connect:active {
+    padding: 0.5rem;
+  }
+
+  .container {
+    margin: 0rem 6rem;
+  }
 }
