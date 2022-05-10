@@ -55,15 +55,18 @@ nav > div > a:visited {
 /* === HERO === */
 
 .hero-container {
-  margin: 0rem 5rem;
+  max-width: 70rem;
+  margin: 2rem auto 0 auto;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   align-items: center;
   background-size: cover;
   gap: 1rem;
+  margin: 0 2rem;
 }
 
 h1 {
@@ -281,6 +284,10 @@ X-small < 576px */
     background-color: green;
   } */
 
+  .hero-container {
+    max-width: 40rem;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
   }
@@ -371,6 +378,10 @@ X-small < 576px */
 
   .hero-container {
     margin: 0rem 1rem;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   /* nav > a:link,
