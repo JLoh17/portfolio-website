@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -55,7 +59,7 @@ nav > div > a:visited {
 /* === HERO === */
 
 .hero-container {
-  max-width: 70rem;
+  max-width: 90rem;
   margin: 2rem auto 0 auto;
 }
 
@@ -89,8 +93,8 @@ h1 {
   width: 100%;
   background-size: cover;
   border-radius: 0.5rem;
-  box-shadow: 5px 5px 10px 1px #25272b;
-  /* margin: 1rem; */
+  /* box-shadow: 5px 5px 10px 1px #25272b;
+  margin: 1rem; */
 }
 
 /* === SKILLS === */
