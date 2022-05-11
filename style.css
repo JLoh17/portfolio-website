@@ -24,7 +24,6 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #efecec;
-  z-index: 999;
 }
 
 .logo {
