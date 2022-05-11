@@ -11,7 +11,7 @@ body {
   box-sizing: border-box;
   line-height: 1.6rem;
   /* background-color: #c6d2d0; */
-  background-color: #466365;
+  background: linear-gradient(82.4deg, #327e84, #466365);
 }
 
 .logo-container {
