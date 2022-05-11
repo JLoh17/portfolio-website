@@ -58,7 +58,7 @@ nav > div > a:visited {
 /* === HERO === */
 
 .hero-container {
-  max-width: 90rem;
+  max-width: 80rem;
   margin: 2rem auto 0 auto;
 }
 
@@ -185,6 +185,69 @@ p > span {
 
 .site-visit:hover {
   font-weight: bold;
+}
+
+/* === MY BLOGS === */
+.list-blogs {
+  max-width: 80ch;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+.blog-post {
+  margin: 4rem 0;
+}
+
+.blog-post:last-child {
+  margin-bottom: 0rem;
+}
+
+.blog-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.blog-date {
+  color: #646d71;
+  /* color: #437686; */
+  font-size: 0.9rem;
+}
+
+.blog-summary {
+  margin-bottom: 0.4rem;
+  color: #385151;
+}
+
+.blog-link:link,
+.blog-link:active {
+  color: #2f4f4f;
+  text-decoration: none;
+}
+
+.blog-link:hover,
+.blog-link:visited {
+  color: #2f4f4f;
+  text-decoration: underline;
+  text-decoration-color: #ca5050;
+  cursor: pointer;
+}
+
+.blog-read-more:link,
+.blog-read-more:active {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blog-read-more:hover,
+.blog-read-more:visited {
+  color: #7f5643;
+  text-decoration: underline;
+  text-decoration-color: #ca5050;
+  cursor: pointer;
+}
+
+.blog-read-more {
+  font-size: 1rem;
 }
 
 /* === MUSIC COVERS === */
