@@ -384,13 +384,9 @@ X-small < 576px */
 }
 
 @media all and (max-width: 768px) {
-  /* body {
-    color: blue;
+  body {
+    line-height: 2rem;
   }
-
-  .separate-section {
-    background-color: blue;
-  } */
 
   nav > a:link,
   nav > a:active,
@@ -434,14 +430,6 @@ X-small < 576px */
 }
 
 @media all and (max-width: 576px) {
-  /* body {
-    color: red;
-  }
-
-  .separate-section {
-    background-color: red;
-  } */
-
   .hero-container {
     margin: 0rem 1rem;
   }
