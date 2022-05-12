@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
 body {
@@ -24,6 +25,9 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #efecec;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logo {
@@ -331,8 +335,10 @@ footer {
 }
 
 h2 {
+  margin-top: 0;
   font-size: 2.6rem;
   line-height: normal;
+  padding-top: 2rem;
 }
 
 /* === Media Query === */
